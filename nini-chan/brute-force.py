@@ -1,7 +1,8 @@
 import gdb
+import string
 
 gdb.execute("b *0x555555669cde")
-a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_"
+a = string.letters + "_"
 w = ['@']*10
 cont = 0
 
